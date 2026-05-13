@@ -20,7 +20,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16 md:h-20">
 
-                    {/* Logo: Indigo box + white shopping bag + English text */}
+
                     <div className="flex items-center space-x-2">
                         <div className="w-8 h-8 rounded-md flex items-center justify-center text-white" style={{ backgroundColor: '#5A2CFF' }}>
                             <BsBag className="text-lg" />
@@ -28,7 +28,7 @@ export default function Navbar() {
                         <span className="text-xl font-bold text-gray-800 tracking-tight">Ecomtara</span>
                     </div>
 
-                    {/* Desktop Nav – Bangla links, hover becomes indigo */}
+
                     <div className="hidden md:flex items-center space-x-5 lg:space-x-6">
                         {navLinks.map((link) => (
                             <a
@@ -41,7 +41,7 @@ export default function Navbar() {
                         ))}
                     </div>
 
-                    {/* Desktop Button – Indigo background, white text */}
+
                     <div className="hidden md:block">
                         <button
                             className="text-white px-5 py-2 rounded-lg font-semibold shadow-md transition hover:opacity-90"
@@ -51,7 +51,7 @@ export default function Navbar() {
                         </button>
                     </div>
 
-                    {/* Mobile menu button */}
+
                     <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-gray-600">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             {mobileOpen ? (
@@ -63,7 +63,7 @@ export default function Navbar() {
                     </button>
                 </div>
 
-                {/* Mobile menu – white background, indigo hover */}
+
                 {mobileOpen && (
                     <div className="md:hidden bg-white border-t py-4 space-y-3">
                         {navLinks.map((link) => (

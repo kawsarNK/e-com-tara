@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar';
-// import Hero from '@/components/Hero';
+import Hero from '@/components/Hero';
 // import Stats from '@/components/Stats';
 // import Features from '@/components/Features';
 // import LiveDemo from '@/components/LiveDemo';
@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
+      <Hero />
       {/* <Hero />
       <Stats />
       <Features />
