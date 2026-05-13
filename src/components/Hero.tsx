@@ -1,19 +1,20 @@
 
 "use client"
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { BsArrowRight } from 'react-icons/bs';
 import { HiOutlineRocketLaunch } from 'react-icons/hi2';
 import { FiSettings, FiCode, FiHeadphones, FiRefreshCw } from 'react-icons/fi';
 
 export default function Hero() {
+    const router = useRouter();
+
     const handleDemoClick = () => {
-        alert('ডেমো দেখুন – শীঘ্রই আসছে!');
-        // Replace with actual navigation: router.push('/demo')
+        router.push('/Livedemo')
     };
 
     const handlePricingClick = () => {
-        alert('মূল্য পরিকল্পনা দেখুন');
-        // Replace with actual navigation: router.push('/pricing')
+        router.push('/Pricing')
     };
 
     return (
